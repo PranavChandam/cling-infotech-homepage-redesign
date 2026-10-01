@@ -1,6 +1,6 @@
 import './Footer.css';
 
-import ClingLogo from '../assets/ClingLogo.webp';
+import clinglogo from '../assets/clinglogo.webp';
 
 function Footer() {
     return (
@@ -10,7 +10,7 @@ function Footer() {
             <div className="footer-header">
 
                 <img
-                    src={ClingLogo}
+                    src={clinglogo}
                     alt="Cling Infotech"
                     className="footer-logo"
                 />
