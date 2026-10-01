@@ -1,0 +1,95 @@
+.info h1 {
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.overview {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    word-spacing: 6px;
+}
+
+/* Vision + Mission container */
+
+.info-cards {
+    width: 90%;
+    max-width: 1150px;
+    margin: 50px auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Vision */
+
+.Vision {
+    flex: 1;
+    min-width: 0;
+
+    background-color: #df131333;
+    border-radius: 15px;
+
+    font-family: Poppins, sans-serif;
+    text-align: center;
+
+    padding: 25px;
+}
+
+.Vision h2 {
+    color: red;
+}
+
+.Vision p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+
+.Mission {
+    flex: 1;
+    min-width: 0;
+
+    background-color: #1363df21;
+    border-radius: 15px;
+
+    font-family: Poppins, sans-serif;
+    text-align: center;
+
+    padding: 25px;
+}
+
+.Mission h2 {
+    color: #1363df;
+}
+
+.Mission p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+.Journey{
+    background-color: #ffebeb;
+    width: 95%;
+    text-align: center;
+    height: 300px;
+    padding: 40px;
+}
+
+.Journey p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+.Journey h1{
+    color: red;
+}

@@ -1,0 +1,314 @@
+.footer {
+    width: 100%;
+    background-color: #fff0f0;
+    color: #111;
+    box-sizing: border-box;
+}
+
+.footer *,
+.footer *::before,
+.footer *::after {
+    box-sizing: border-box;
+}
+
+
+
+.footer-header {
+    width: 100%;
+    min-height: 90px;
+
+    padding: 15px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.footer-logo {
+    width: 95px;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #333;
+    color: white;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+}
+
+.social-links a span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    background-color: #e72929;
+}
+
+
+
+.footer-top {
+    width: 100%;
+    padding: 35px 4% 30px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 60px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+.footer h2 {
+    font-size: 20px;
+    margin: 0 0 25px;
+    color: #111;
+}
+
+.footer h3 {
+    font-size: 22px;
+    font-weight: 400;
+
+    margin: 0 0 20px;
+}
+
+.footer h4 {
+    font-size: 17px;
+
+    margin: 15px 0 5px;
+}
+
+.footer p {
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin: 0 0 10px;
+}
+
+
+
+.footer-company {
+    width: 100%;
+    max-width: 600px;
+}
+
+.footer-company > h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-contact {
+    margin-top: 25px;
+}
+
+.footer-contact p {
+    margin: 15px 0;
+}
+
+
+
+.footer-links,
+.footer-services {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a,
+.footer-services a {
+    width: fit-content;
+    max-width: 100%;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+.footer-links a:hover,
+.footer-services a:hover {
+    color: #e72929;
+}
+
+
+
+.footer-bottom {
+    width: 100%;
+
+    padding: 18px 20px;
+
+    text-align: center;
+
+    background-color: #fff0f0;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    font-size: 16px;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+    .footer-header {
+        padding: 15px 30px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+
+        padding: 35px 5%;
+    }
+
+    .footer-company {
+        grid-column: 1 / -1;
+        max-width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .footer-header {
+        min-height: 75px;
+
+        padding: 12px 20px;
+    }
+
+    .footer-logo {
+        width: 80px;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-links a {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-links a span {
+        font-size: 14px;
+    }
+
+
+    .footer-top {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 35px 25px;
+    }
+
+    .footer-company {
+        grid-column: auto;
+        max-width: 100%;
+    }
+
+
+
+
+    .footer h2 {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+
+    .footer h3 {
+        font-size: 20px;
+    }
+
+    .footer h4 {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+
+    .footer-links a,
+    .footer-services a {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+
+
+    .footer-bottom {
+        padding: 15px 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+
+}
+
+
+
+@media (max-width: 400px) {
+
+    .footer-header {
+        padding: 12px 15px;
+    }
+
+    .footer-logo {
+        width: 75px;
+    }
+
+    .social-links a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-top {
+        padding: 30px 20px;
+    }
+
+    .footer h2 {
+        font-size: 18px;
+    }
+
+    .footer h3 {
+        font-size: 19px;
+    }
+
+    .footer p,
+    .footer-links a,
+    .footer-services a {
+        font-size: 14px;
+    }
+
+}

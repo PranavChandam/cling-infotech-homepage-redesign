@@ -1,0 +1,344 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title h1 {
+    color: #e72929;
+    font-size: 36px;
+    margin: 0;
+}
+
+.title-line {
+    width: 85px;
+    height: 5px;
+    margin: 12px auto 0;
+    background: linear-gradient(
+        to right,
+        #2ec4b6 0%,
+        #2ec4b6 30%,
+        #000 30%,
+        #000 100%
+    );
+    border-radius: 10px;
+}
+
+
+.services {
+    width: 100%;
+    padding: 60px 5%;
+    background-color: white;
+}
+
+.service-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 60px 80px;
+}
+
+.service-card {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.service-icon {
+    min-width: 120px;
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 50%;
+
+    font-size: 48px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.service-content {
+    min-width: 0;
+}
+
+.service-content h2 {
+    color: #1363df;
+    font-size: 27px;
+    margin: 5px 0 10px;
+}
+
+.service-content p {
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+.leadership {
+    width: 100%;
+    padding: 70px 5%;
+    background-color: white;
+}
+
+.leadership-container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px;
+}
+
+.leader-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 290px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: white;
+    padding: 25px;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+
+    border-radius: 8px;
+}
+
+.leader-card img {
+    width: 145px;
+    height: 145px;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+}
+
+.leader-card h2 {
+    color: #07358c;
+    font-size: 21px;
+    margin: 5px 0;
+}
+
+.leader-card p {
+    color: #07358c;
+    font-size: 17px;
+    margin: 0;
+}
+
+
+
+.testimonials {
+    width: 100%;
+    padding: 65px 5% 70px;
+
+    background-color: #fff0f0;
+}
+
+.testimonial-intro {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto 80px;
+
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.testimonial-container {
+    width: 100%;
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px;
+}
+
+.testimonial-card {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 320px;
+
+    padding: 70px 30px 30px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card img {
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+
+    top: -40px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    line-height: 1.45;
+
+    margin: 0 0 25px;
+}
+
+.testimonial-card h2 {
+    font-size: 25px;
+    font-weight: 500;
+
+    margin: 0 0 8px;
+
+    font-family: cursive;
+}
+
+.testimonial-card span {
+    font-size: 18px;
+}
+
+
+@media (max-width: 1000px) {
+
+    .service-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .leadership-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+
+    .testimonial-container {
+        grid-template-columns: 1fr;
+        gap: 65px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .services,
+    .leadership,
+    .testimonials {
+        padding: 50px 20px;
+    }
+
+
+    /* Section heading */
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h1 {
+        font-size: 28px;
+    }
+
+
+    /* Services */
+
+    .service-card {
+        gap: 15px;
+    }
+
+    .service-icon {
+        min-width: 75px;
+        width: 75px;
+        height: 75px;
+
+        font-size: 30px;
+    }
+
+    .service-content h2 {
+        font-size: 21px;
+    }
+
+    .service-content p {
+        font-size: 15px;
+    }
+
+
+    /* Leadership */
+
+    .leadership-container {
+        grid-template-columns: 1fr;
+    }
+
+    .leader-card {
+        width: 100%;
+    }
+
+
+    /* Testimonials */
+
+    .testimonial-intro {
+        font-size: 16px;
+        margin-bottom: 70px;
+    }
+
+    .testimonial-container {
+        width: 100%;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        padding: 65px 20px 25px;
+    }
+
+    .testimonial-card p {
+        font-size: 16px;
+    }
+
+    .testimonial-card h2 {
+        font-size: 22px;
+    }
+
+    .testimonial-card span {
+        font-size: 16px;
+    }
+
+}

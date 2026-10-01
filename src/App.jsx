@@ -5,6 +5,10 @@ import { useState } from 'react'
 // import './App.css'
 import Navbar from './components/Navbar'
 import MainBody from './components/MainBody'
+import Information from './components/Information'
+import Service from './components/Service'
+import Contact from './components/Contact.jsx'
+import Footer from './components/Footer.jsx'
 function App() {
   
 
@@ -12,6 +16,10 @@ function App() {
     <div>
       <Navbar/>
       <MainBody/>
+      <Information/>
+      <Service/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }

@@ -1,0 +1,191 @@
+.contact {
+    width: 100%;
+    padding: 50px 5%;
+    background-color: white;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-title h1 {
+    color: #e72929;
+    font-size: 36px;
+    margin: 0;
+}
+
+.title-line {
+    width: 85px;
+    height: 5px;
+    margin: 12px auto 0;
+
+    background: linear-gradient(
+        to right,
+        #2ec4b6 0%,
+        #2ec4b6 30%,
+        #000 30%,
+        #000 100%
+    );
+
+    border-radius: 10px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+
+    padding: 55px 30px 30px;
+
+    background-color: white;
+
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h2 {
+    color: #071c4d;
+    font-size: 23px;
+    font-weight: 400;
+
+    margin: 0 0 25px;
+}
+
+
+.form-row {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 55px;
+
+    margin-bottom: 45px;
+}
+
+
+.form-group,
+.message-group {
+    width: 100%;
+}
+
+.form-group label,
+.message-group label {
+    display: block;
+
+    color: #aaa;
+
+    font-size: 19px;
+
+    margin-bottom: 18px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 53px;
+
+    border: 1px solid #d5d5d5;
+
+    padding: 10px;
+
+    font-size: 17px;
+
+    outline: none;
+}
+
+.form-group input:focus,
+.message-group textarea:focus {
+    border-color: #e72929;
+}
+
+
+
+.message-group {
+    margin-bottom: 45px;
+}
+
+.message-group textarea {
+    width: 100%;
+    height: 125px;
+
+    resize: vertical;
+
+    border: 1px solid #d5d5d5;
+
+    padding: 10px;
+
+    font-size: 17px;
+
+    outline: none;
+}
+
+
+.contact-form button {
+    border: none;
+
+    background-color: #ed1717;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    padding: 13px 28px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #c91414;
+}
+
+
+@media (max-width: 800px) {
+
+    .contact {
+        padding: 45px 4%;
+    }
+
+    .form-row {
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .contact {
+        padding: 40px 20px;
+    }
+
+    .contact-title h1 {
+        font-size: 30px;
+    }
+
+    .contact-form {
+        padding: 35px 20px 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        margin-bottom: 30px;
+    }
+
+    .form-group label,
+    .message-group label {
+        font-size: 17px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
