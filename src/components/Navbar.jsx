@@ -1,23 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
 import clinglogo from '../assets/clinglogo.webp';
 
 function Navbar() {
     const [openMenu, setOpenMenu] = useState(null);
 
+    const dropdownRef = useRef(null);
+
     const toggleMenu = (menu) => {
         setOpenMenu(openMenu === menu ? null : menu);
     };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (
+                dropdownRef.current &&
+                !dropdownRef.current.contains(event.target)
+            ) {
+                setOpenMenu(null);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <nav id="Nav">
 
             <div className="logo">
-               
-            <img src={clinglogo} alt='logo'/>
+                <img src={clinglogo} alt="logo" />
             </div>
 
-            <div className="nav-links">
+            <div className="nav-links" ref={dropdownRef}>
 
                 <a className="active">Home</a>
 
