@@ -1,16 +1,70 @@
-# React + Vite
+# Cling Info Tech - Website Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive website redesign of Cling Info Tech built as part of a website redesign assignment.
 
-Currently, two official plugins are available:
+## 🚀 Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://cling-infotech-homepage-redesign-4t.vercel.app
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/PranavChandam/cling-infotech-homepage-redesign
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- Git & GitHub
+- Vercel
+
+## ✨ Features
+
+- Responsive navigation bar
+- Dropdown navigation menus
+- Responsive hero section
+- Company statistics section
+- Global presence section
+- Client showcase
+- Company information section
+- Services section
+- Leadership team section
+- Testimonials section
+- Contact form
+- Responsive footer
+- Mobile, tablet and desktop layouts
+
+## 📁 Project Structure
+
+```text
+cling-infotech-homepage-redesign/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── icons/
+│   │
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── MainBody.jsx
+│   │   ├── Information.jsx
+│   │   ├── Service.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
